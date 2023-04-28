@@ -1,0 +1,97 @@
+.apuestas .ficha {
+    margin: 1em;
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5), 0 0 3px 0 rgba(0, 0, 0, 0.4) inset;
+    border-radius: 50%;
+    background-size: 75px 75px;
+    background-position: center center;
+    
+    transition: all .2s;
+}
+
+.ficha:before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;   
+    background-size: 75px 75px;
+    background-position: center center;
+}
+
+.ficha:after {
+    z-index: 2;
+    position: absolute;
+    content: "25";
+    text-align: center;
+    font: bold 25px/55px Arial;
+    white-space: pre;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+}
+
+/* Colores */
+.azul {
+    background-image: linear-gradient(0deg, transparent 0, transparent 34px, #fff 34px, #fff 42px, transparent 42px, transparent 75px), linear-gradient(60deg, transparent 0, transparent 44px, #fff 44px, #fff 57px, transparent 57px, transparent 75px), linear-gradient(120deg, #000099 0, #000099 44px, #fff 44px, #fff 57px, #000099 57px, #000099 75px);
+}
+
+.azul:before {
+    border: 5px solid #000099;
+    background-image: linear-gradient(0deg, transparent 0, transparent 35px, #EBEBEB 35px, #EBEBEB 41px, transparent 41px, transparent 75px), linear-gradient(30deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(60deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(90deg, transparent 0, transparent 35px, #EBEBEB 35px, #EBEBEB 41px, transparent 41px, transparent 75px), linear-gradient(120deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(150deg, #00016C 0, #00016C 49px, #EBEBEB 49px, #EBEBEB 55px, #00016C 55px, #00016C 75px);
+}
+
+.azul:after {
+    content: "10";
+    background: #EBEBEB;
+    color: #00016C;
+    border: 1px solid #00016C;
+}
+
+.verde {
+    background-image: linear-gradient(0deg, transparent 0, transparent 34px, #fff 34px, #fff 42px, transparent 42px, transparent 75px), linear-gradient(60deg, transparent 0, transparent 44px, #fff 44px, #fff 57px, transparent 57px, transparent 75px), linear-gradient(120deg, #008000 0, #008000 44px, #fff 44px, #fff 57px, #008000 57px, #008000 75px);
+}
+
+.verde:before {
+    border: 5px solid #008000;
+    background-image: linear-gradient(0deg, transparent 0, transparent 35px, #EBEBEB 35px, #EBEBEB 41px, transparent 41px, transparent 75px), linear-gradient(30deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(60deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(90deg, transparent 0, transparent 35px, #EBEBEB 35px, #EBEBEB 41px, transparent 41px, transparent 75px), linear-gradient(120deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(150deg, #016C00 0, #016C00 49px, #EBEBEB 49px, #EBEBEB 55px, #016C00 55px, #016C00 75px);
+}
+
+.verde:after {
+    content: "25";
+    background: #EBEBEB;
+    color: #016C00;
+    border: 1px solid #016C00;
+
+}
+
+.negra {
+    background-image: linear-gradient(0deg, transparent 0, transparent 34px, #fff 34px, #fff 42px, transparent 42px, transparent 75px), linear-gradient(60deg, transparent 0, transparent 44px, #fff 44px, #fff 57px, transparent 57px, transparent 75px), linear-gradient(120deg, #222222 0, #222222 44px, #fff 44px, #fff 57px, #222222 57px, #222222 75px);
+}
+
+.negra:before {
+    border: 5px solid #222222;
+    background-image: linear-gradient(0deg, transparent 0, transparent 35px, #EBEBEB 35px, #EBEBEB 41px, transparent 41px, transparent 75px), linear-gradient(30deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(60deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(90deg, transparent 0, transparent 35px, #EBEBEB 35px, #EBEBEB 41px, transparent 41px, transparent 75px), linear-gradient(120deg, transparent 0, transparent 49px, #EBEBEB 49px, #EBEBEB 55px, transparent 55px, transparent 75px), linear-gradient(150deg, #000000 0, #000000 49px, #EBEBEB 49px, #EBEBEB 55px, #000000 55px, #000000 75px);
+    
+}
+
+.negra:after {
+    content: "100";
+    background: #EBEBEB;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.ficha:hover {
+    /* transform: scale(1.01); */
+    box-shadow: 0 0 13px 3px #222222;
+    cursor: pointer;
+}

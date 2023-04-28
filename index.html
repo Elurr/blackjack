@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Cards CSS -->
+    <link rel="stylesheet" href="cartas.css">
+    <!-- Chips CSS -->
+    <link rel="stylesheet" href="fichas.css">
+
+
+</head>
+<body>
+
+    <div class="container">
+        <!-- <h1>&spades; <span>&hearts;</span> Blackjack <span>&diams;</span> &clubs;</h1> -->
+        <div id="contenedor-baraja">
+
+        </div>
+        <div class="tablero">
+            <div class="tablero-casa">
+                <p>Cartas de la casa: <span id="mano-casa"></span></p>
+                <p>Puntos: <span id="puntos-casa"></span></p>
+            </div>
+            <div class="tablero-jugador">
+                <p>Cartas del jugador: <span id="mano-jugador"></span></p>
+                <p>Puntos: <span id="puntos-jugador"></span></p>
+            </div>
+        </div>
+        <div class="tablero-resultado">
+            <p id="resultado"></p>
+        </div>
+        <div class="controles">
+            <div id="btn-iniciar" class="boton">Iniciar Partida</div>
+            <div id="btn-pedir" class="boton">Pedir carta</div>
+            <div id="btn-plantarse" class="boton">Plantarse</div>
+        </div>
+        <div class="apuestas">
+            <div class="ficha azul" onclick="apostar(10)"></div>
+            <div class="ficha verde" onclick="apostar(25)"></div>
+            <div class="ficha negra" onclick="apostar(100)"></div>
+        </div>
+
+        <button onclick="voltearBaraja()">Voltear cartas</button>
+        <button onclick="juntar()">Juntar cartas</button>
+        <button onclick="separar()">Separar cartas</button>
+        <button onclick="mezclar()">Mezclar cartas</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

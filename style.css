@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Kanit&family=Rubik&display=swap');
+body {
+    /* height: 100vh; */
+    margin: 0;
+
+    font-family: 'Kanit', sans-serif;
+    /* background: #184f18; */
+    background: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    /* background: rgba(0, 0, 0, 0.3); */
+    /* background: #044504; */
+    /* background: #011f01; */
+    background: linear-gradient(135deg, #044504 66%, #011f01);
+    padding: 50px;
+    width: 65%;
+    min-width: 800px;
+    margin: 100px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px 5px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    user-select: none;
+}
+
+#contenedor-baraja {
+    position: relative;
+    /* position: absolute;
+    top: 5%;
+    left: 5%; */
+    height: 360px;
+
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#contenedor-baraja > * {
+    margin: 3px 0;
+}
+
+.tablero {
+    display: flex;
+    justify-content: space-around;
+}
+.tablero > div {
+    margin: 30px;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+}
+.controles .boton {
+    margin: 20px;
+    padding: 5px 10px;
+    text-align: center;
+    text-shadow: 0 0 9px;
+    border-radius: 5px;
+    background: #161515;
+    color: #ddad32;
+    transition: all 0.3s;
+}
+.controles .boton:hover {
+    cursor: pointer;
+    box-shadow: 0 0 4px 1px #ddad32;
+}
+.controles .boton:disabled {
+    opacity: 0.7;
+}
+
+p {
+    color: white;
+}
+p span {
+    display: flex;
+    justify-content: start;
+}
+p span div {
+    text-align: center;
+    margin: 1px;
+}
+
